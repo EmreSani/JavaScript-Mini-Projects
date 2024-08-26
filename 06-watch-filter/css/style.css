@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    padding: 50px;
+}
+.leftMenu{
+    flex: 1;
+}
+.content{
+    flex: 3;
+}
+#search{
+    padding: 10px;
+    border: 2px solid rgb(80,80,80,);
+    border-radius: 10px;
+    width: 300px;
+}
+h1{
+    color: gray;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+h2{
+    color: gray;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    width: 250px;
+
+
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: 300;
+    flex-wrap: wrap;
+
+}
+.price{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+img{
+    width: 120px;
+    height: 170px;
+}
+
+.cats{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.cat-item{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.cat-item::before{
+    content: "- ";
+    opacity: 0;
+    transition: opacity .5s all;
+}
+.cat-item::after{
+    content: " -";
+    opacity: 0;
+    transition: opacity .5s all;
+}
+
+.cat-item:hover::before, .cat-item:hover::after{
+    opacity: 1;
+}
